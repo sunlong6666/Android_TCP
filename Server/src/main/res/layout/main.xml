@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:text="@string/serverText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_margin="10sp"
+        android:textColor="#FF0000">
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="IP:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/m_tv_ipShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="127.0.0.1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="端口："
+            android:textSize="18sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/m_et_port"
+            android:hint="端口号  "
+            android:digits="1234567890"
+            android:maxLength="6"
+            android:layout_width="wrap_content"
+            android:textColor="#FF0000"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:lines="1"
+            android:textSize="18sp">
+        </EditText>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/m_bt_monitor"
+            android:text="开始监听"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320sp"
+        android:layout_margin="10sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="#000000">
+
+            <TextView
+                android:text="当前在线："
+                android:layout_width="wrap_content"
+                android:layout_height="80sp"
+                android:textColor="#00FF00"
+                android:textSize="15dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/m_tv_showClient"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="80sp"
+                android:textColor="#00FF00"
+                android:textSize="15dp"
+                android:background="#000000">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/m_tv_showMessage"
+            android:layout_height="0sp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#bfbdbd">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/m_et_message"
+            android:hint="Hello Client！"
+            android:lines="1"
+            android:maxLength="200"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </EditText>
+
+        <Button
+            android:id="@+id/m_bt_send"
+            android:text="发送"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

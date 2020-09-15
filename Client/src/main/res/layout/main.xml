@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:text="@string/clientText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_margin="10sp"
+        android:textColor="#FF0000">
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="IP:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/m_et_ip"
+            android:hint="IP地址                     "
+            android:textStyle="bold"
+            android:digits="1234567890."
+            android:textColor="#FF0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:lines="1"
+            android:textSize="18sp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="端口："
+            android:textSize="18sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/m_et_port"
+            android:hint="端口号  "
+            android:digits="1234567890"
+            android:maxLength="6"
+            android:layout_width="wrap_content"
+            android:textColor="#FF0000"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:lines="1"
+            android:textSize="18sp">
+        </EditText>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/m_bt_connect"
+            android:text="连接"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320sp"
+        android:layout_margin="10sp"
+        android:background="#bfbdbd">
+
+        <TextView
+            android:id="@+id/m_tv_showMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/m_et_message"
+            android:hint="Hello Server！"
+            android:lines="1"
+            android:maxLength="200"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </EditText>
+
+        <Button
+            android:id="@+id/m_bt_send"
+            android:text="发送"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
