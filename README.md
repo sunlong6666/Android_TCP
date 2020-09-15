@@ -1,4 +1,4 @@
 # Android_TCP
 Android_TCP:Client and Server.
-
-2020/9/15：The server supports multiple client connections.
+![Server]https://github.com/sunlong6666/Android_TCP/blob/master/picture/TCPserver.jpg
+![Client]https://github.com/sunlong6666/Android_TCP/blob/master/picture/TCPclient.png
