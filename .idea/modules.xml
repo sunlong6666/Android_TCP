@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/Client.iml" filepath="$PROJECT_DIR$/.idea/modules/client/Client.iml" group="TCP/Client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/Server.iml" filepath="$PROJECT_DIR$/.idea/modules/server/Server.iml" group="TCP/Server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TCP.iml" filepath="$PROJECT_DIR$/.idea/modules/TCP.iml" group="TCP" />
+    </modules>
+  </component>
+</project>

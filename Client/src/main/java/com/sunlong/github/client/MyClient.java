@@ -44,7 +44,7 @@ public class MyClient
     }
 
     /**
-     * 开始接收数据
+     * 开始接受数据
      */
     private void readServer()
     {
