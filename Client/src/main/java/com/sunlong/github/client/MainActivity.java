@@ -34,12 +34,13 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                //判断当前连接状态，如果正在连接，则断开当前连接
                 if (MyHandler.CONNECT_STATUS)
                 {
                     handler.sendEmptyMessage(MyHandler.CONNECT_BREAK);
                     client.closeAll();
                 }
-                else
+                else //如果未连接，则开始连接服务端
                 {
                     ip = et_ip.getText().toString().trim();
                     port = et_port.getText().toString().trim();
