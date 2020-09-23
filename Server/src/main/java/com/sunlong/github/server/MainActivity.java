@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity
 
         initView();
 
-        tv_ip.setText(GetLocalIP());
+        tv_ip.setText(GetLocalIP());//获取当前设备局域网IP地址并展示在界面
 
         bt_monitor.setOnClickListener(new View.OnClickListener()
         {
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity
                }
                else
                {
-                   //如果当前网络处于连接状态就停止监听
+                   //如果当前处于连接状态就停止监听
                    handler.sendEmptyMessage(MyHandler.SERVER_BREAK);
                    myServer.closeMyServer();
                    serverThread.closeAll();
