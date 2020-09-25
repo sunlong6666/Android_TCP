@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity
     private TextView tv_showClient,tv_showMessage,tv_ip;
     private MyHandler handler;
     private String port;//服务端监听的端口号
-    private MyServer myServer;
-    private ServerThread serverThread;
+    private MyServer myServer;//创建服务端对象
+    private ServerThread serverThread;//开启服务端对象
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                //判断当前服务器状态，如果未开启就开始监听；
                if(!MyHandler.CONNECT_STATUS)
                {
                    port = et_port.getText().toString().trim();
