@@ -31,6 +31,7 @@ public class MyServer
                 {
                     sockets.add(socket);//加入到集合
                 }
+                //开启线程创建服务器
                 Thread thread = new Thread(new ServerThread(socket,handler));
                 thread.start();
             }
@@ -46,6 +47,7 @@ public class MyServer
     {
         try
         {
+            //关闭服务器
             serverSocket.close();
         }
         catch (IOException e)
