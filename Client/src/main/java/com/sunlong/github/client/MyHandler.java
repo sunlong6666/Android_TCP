@@ -42,7 +42,7 @@ public class MyHandler extends Handler
                 bt_connect.setText("断开连接");
                 bt_connect.setTextColor(Color.RED);
                 bt_send.setTextColor(Color.RED);
-                bt_send.setEnabled(true);
+                bt_send.setEnabled(true);//发送按钮生效
                 break;
             case CONNECT_BREAK:
                 Toast.makeText(context,"连接断开！",Toast.LENGTH_LONG).show();
@@ -50,7 +50,7 @@ public class MyHandler extends Handler
                 bt_connect.setText("连接");
                 bt_connect.setTextColor(Color.BLACK);
                 bt_send.setTextColor(Color.rgb(165,165,165));
-                bt_send.setEnabled(false);
+                bt_send.setEnabled(false);//发送按钮失效
                 break;
             case CONNECT_FAILED:
                 Toast.makeText(context,"连接失败！",Toast.LENGTH_LONG).show();
