@@ -17,7 +17,7 @@ public class MyHandler extends Handler
     public static final int SERVER_SUCCESS = 100;
     public static final int SERVER_BREAK = 300;
     public static final int SERVER_FAILED = 400;
-    public static boolean CONNECT_STATUS = false;
+    public static boolean CONNECT_STATUS = false;//当前客户端连接服务端状态
 
     private Context context;
     private TextView tv_showClient,tv_showMessage;
@@ -38,7 +38,7 @@ public class MyHandler extends Handler
         {
             case SERVER_SUCCESS:
                 CONNECT_STATUS = true;
-                bt_send.setEnabled(true);
+                bt_send.setEnabled(true);//发送按钮生效
                 bt_send.setTextColor(Color.RED);
                 bt_monitor.setText("停止");
                 bt_monitor.setTextColor(Color.RED);
@@ -47,7 +47,7 @@ public class MyHandler extends Handler
                 break;
             case SERVER_BREAK:
                 CONNECT_STATUS = false;
-                bt_send.setEnabled(false);
+                bt_send.setEnabled(false);//发送按钮失效
                 bt_send.setTextColor(Color.rgb(165,165,165));
                 bt_monitor.setText("开始监听");
                 bt_monitor.setTextColor(Color.BLACK);
